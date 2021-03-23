@@ -15,7 +15,7 @@ const isPromise = (x: unknown) => {
 // Effectively infinity, but a SMI.
 const _infinity = 0x7fffffff;
 
-class UntilDirective extends AsyncDirective {
+export class UntilDirective extends AsyncDirective {
   private _lastRenderedIndex: number = _infinity;
   private _values: unknown[] = [];
 
